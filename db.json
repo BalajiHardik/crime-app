@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "d744",
+      "email": "balaji@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "aeae",
+      "email": "Nutt@gmail.com",
+      "password": "123"
+    }
+  ],
+  "crimes": [
+    {
+      "criminalName": "Balaji",
+      "details": "Robbery",
+      "criminalStatus": "Arrested",
+      "userId": "d744",
+      "userEmail": "balaji@gmail.com",
+      "id": "a527"
+    },
+    {
+      "id": "d663",
+      "criminalName": "Thanga Balaji",
+      "details": "Chain snatching ",
+      "criminalStatus": "Active",
+      "userId": "aeae",
+      "userEmail": "Nutt@gmail.com"
+    }
+  ]
+}
