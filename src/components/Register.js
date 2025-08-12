@@ -9,16 +9,16 @@ function Register() {
 
   const handleRegister = async () => {
     if (!email || !password) {
-      alert('Please fill in all fields');
+      window.alert('Please fill in all fields');
       return;
     }
 
     try {
       await axios.post('http://localhost:3001/users', { email, password });
-      alert('Registration successful!');
+      window.alert('Registration successful!');
       navigate('/');
     } catch (error) {
-      alert('Registration failed');
+      window.alert('Registration failed');
       console.error(error);
     }
   };
@@ -41,7 +41,7 @@ function Register() {
         value={password}
         onChange={e => setPassword(e.target.value)}
       />
-      <button style={styles.button} onClick={handleRegister}>Register</button>
+      <button style={styles.button} onClick={handleRegister}>Submit</button>
       <p style={styles.linkText}>
         Already have an account? <Link to="/">Login here</Link>
       </p>

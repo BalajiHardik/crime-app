@@ -23,7 +23,7 @@ function Login() {
       <h2>Login</h2>
       <input style={styles.input} placeholder="Email" onChange={e => setEmail(e.target.value)} />
       <input style={styles.input} placeholder="Password" type="password" onChange={e => setPassword(e.target.value)} />
-      <button style={styles.button} onClick={handleLogin}>Login</button>
+      <button style={styles.button} onClick={handleLogin}>Submit</button>
       <p style={styles.linkText}>Don't have an account? <Link to="/register">Register here</Link></p>
     </div>
   );

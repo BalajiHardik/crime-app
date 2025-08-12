@@ -7,26 +7,41 @@
     },
     {
       "id": "aeae",
-      "email": "Nutt@gmail.com",
+      "email": "sample@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "805a",
+      "email": "balaji@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "2b3c",
+      "email": "hardik@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "4ef6",
+      "email": "testuser@example.com",
+      "password": "test123"
     }
   ],
   "crimes": [
     {
-      "criminalName": "Balaji",
-      "details": "Robbery",
+      "criminalName": "Thanga Balaji P",
+      "details": "sample details",
       "criminalStatus": "Arrested",
-      "userId": "d744",
+      "userId": "aeae",
       "userEmail": "balaji@gmail.com",
-      "id": "a527"
+      "id": "d663"
     },
     {
-      "id": "d663",
-      "criminalName": "Thanga Balaji",
-      "details": "Chain snatching ",
+      "id": "8f32",
+      "criminalName": "sample",
+      "details": "sample",
       "criminalStatus": "Active",
-      "userId": "aeae",
-      "userEmail": "Nutt@gmail.com"
+      "userId": "2b3c",
+      "userEmail": "hardik@gmail.com"
     }
   ]
 }

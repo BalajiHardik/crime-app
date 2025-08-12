@@ -8,8 +8,11 @@ jest.mock('axios');
 
 // Mock useNavigate
 const mockedNavigate = jest.fn();
+
 jest.mock('react-router-dom', () => ({
+  // keep everything else as-is
   ...jest.requireActual('react-router-dom'),
+  // return a function for useNavigate
   useNavigate: () => mockedNavigate,
 }));
 
@@ -44,13 +47,15 @@ describe('Register Component', () => {
       target: { value: 'password123' },
     });
 
-    fireEvent.click(screen.getByText(/Register/i));
+    fireEvent.click(screen.getByText(/Submit/i));
 
     expect(axios.post).toHaveBeenCalledWith('http://localhost:3001/users', {
       email: 'test@example.com',
       password: 'password123',
     });
 
-    expect(mockedNavigate).toHaveBeenCalledWith('/');
+    await waitFor(() => {
+      expect(mockedNavigate).toHaveBeenCalledWith('/');
+    });    
   });
 });
